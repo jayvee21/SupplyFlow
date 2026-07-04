@@ -1,4 +1,4 @@
-ID,supplier_ID,scheduledDate,status,notes
+ID,supplier_ID,scheduledDate,status_code,notes
 e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0,8a28d7df-6333-418e-8fb0-5a6e371f4e1c,2026-07-10,planned,"Weekly produce restock"
 f630ddf3-7566-4b7d-96df-97071f4dc790,8a28d7df-6333-418e-8fb0-5a6e371f4e1c,2026-06-28,delivered,"Delivered ahead of schedule"
 796be89a-3bc5-4388-bfa6-9e5b0b2cbe28,bcc26ef0-2eb1-4f3a-9273-5b82776e8760,2026-07-05,in_transit,"Truck departed warehouse 07:00"

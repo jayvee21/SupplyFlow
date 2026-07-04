@@ -1,0 +1,6 @@
+code,name,descr
+planned,Planned,Delivery has been scheduled
+in_transit,In Transit,Delivery is en route
+delivered,Delivered,Delivery has been completed
+delayed,Delayed,Delivery is behind schedule
+cancelled,Cancelled,Delivery was cancelled

@@ -1,4 +1,4 @@
-ID,delivery_ID,fromStatus,toStatus,changedAt,remarks
+ID,delivery_ID,fromStatus_code,toStatus_code,changedAt,remarks
 1c74a54f-8642-44f0-ba84-3eca887c8c4b,e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0,,planned,2026-06-25T09:00:00Z,"Delivery scheduled"
 cb0620d9-2181-4f21-b609-9c52ed51f921,f630ddf3-7566-4b7d-96df-97071f4dc790,,planned,2026-06-20T08:30:00Z,"Delivery scheduled"
 c8d2a69a-f234-4d5e-b0df-20fe4355a959,f630ddf3-7566-4b7d-96df-97071f4dc790,planned,in_transit,2026-06-27T06:15:00Z,"Truck en route"

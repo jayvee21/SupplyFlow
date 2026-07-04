@@ -13,7 +13,7 @@ export default class AdminServiceImpl extends cds.ApplicationService {
                 return req.reject(404, `Delivery with ID ${deliveryId} not found`); 
             }
 
-            const fromStatus = delivery.status;
+            const fromStatus = delivery.status_code;
             if (fromStatus === 'delivered' || fromStatus === 'cancelled') {
                 return req.reject(400, `Cannot mark delivery as delivered from status '${fromStatus}'`);
             }
@@ -22,16 +22,17 @@ export default class AdminServiceImpl extends cds.ApplicationService {
             // so these writes bypass AdminService's own @readOnly restrictions on DeliveryStatusLog.
             
             await UPDATE('supplyFlow.Deliveries')
-                .set({ status: 'delivered' })
+                .set({ status_code: 'delivered' })
                 .where({ ID: deliveryId });
             
             await INSERT.into('supplyFlow.DeliveryStatusLog').entries({
                 delivery_ID: deliveryId,
-                fromStatus,
-                toStatus: 'delivered'
+                fromStatus_code: fromStatus,
+                toStatus_code: 'delivered',
+                changedBy: req.user.id
             });
 
-            return req.reply({ ...delivery, status: 'delivered' });
+            return req.reply({ ...delivery, status_code: 'delivered' });
         });
         return super.init();
     }
