@@ -1,0 +1,12 @@
+ID,delivery_ID,fromStatus,toStatus,changedAt,remarks
+1c74a54f-8642-44f0-ba84-3eca887c8c4b,e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0,,planned,2026-06-25T09:00:00Z,"Delivery scheduled"
+cb0620d9-2181-4f21-b609-9c52ed51f921,f630ddf3-7566-4b7d-96df-97071f4dc790,,planned,2026-06-20T08:30:00Z,"Delivery scheduled"
+c8d2a69a-f234-4d5e-b0df-20fe4355a959,f630ddf3-7566-4b7d-96df-97071f4dc790,planned,in_transit,2026-06-27T06:15:00Z,"Truck en route"
+e2fcba9e-7773-4486-8848-4aae4d6d2019,f630ddf3-7566-4b7d-96df-97071f4dc790,in_transit,delivered,2026-06-28T14:45:00Z,"Confirmed received by warehouse staff"
+40dbf39e-9171-4eea-8d25-a6da6b006cda,796be89a-3bc5-4388-bfa6-9e5b0b2cbe28,,planned,2026-06-30T10:00:00Z,"Delivery scheduled"
+eb8caa5e-9d2a-47d9-8fd1-608c75df9559,796be89a-3bc5-4388-bfa6-9e5b0b2cbe28,planned,in_transit,2026-07-05T07:00:00Z,"Truck departed origin"
+1bfce3ff-9146-446f-932b-c7dfbf795da1,856bd233-b884-4431-bee8-10eb0ce60241,,planned,2026-06-25T11:00:00Z,"Delivery scheduled"
+6788fe45-619b-495c-b0cd-de1707f2a8af,856bd233-b884-4431-bee8-10eb0ce60241,planned,in_transit,2026-06-29T08:00:00Z,"Shipment in transit"
+370b63c3-d6a0-4a7a-b47a-1eb842b7456a,856bd233-b884-4431-bee8-10eb0ce60241,in_transit,delayed,2026-07-01T16:20:00Z,"Held at customs"
+9a2d8635-fa1b-46f0-9744-c880e7b74ca7,a92f3872-cc95-49d1-8ea0-b33ee233e437,,planned,2026-06-15T09:00:00Z,"Delivery scheduled"
+ac3b6cbf-ca81-4912-86b0-a0f395aead91,a92f3872-cc95-49d1-8ea0-b33ee233e437,planned,cancelled,2026-06-19T13:00:00Z,"Supplier requested cancellation"

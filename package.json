@@ -8,17 +8,31 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.4",
-    "@sap/cds-dk": "^9"
+    "@sap/cds-dk": "^9",
+    "@cap-js/cds-types": "^0.18.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4",
+    "typescript": "^6.0.0",
+    "@cap-js/cds-typer": ">=0.1"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "watch:hybrid": "cds watch --profile hybrid",
+    "build": "cds build --production",
+    "deploy:local": "cds deploy --to sqlite:db.sqlite",
+    "reset:local-db": "rm -f db.sqlite"
   },
   "private": true,
   "cds": {
     "requires": {
       "[production]": {
-        "auth": "xsuaa"
+        "auth": "xsuaa",
+        "db": "hana"
       }
     }
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
   }
 }

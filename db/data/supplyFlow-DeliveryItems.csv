@@ -1,0 +1,9 @@
+ID,delivery_ID,itemName,quantity,unit
+805b7318-15f4-4b4f-874c-3bcb19ee2ca6,e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0,Organic Tomatoes,50,crate
+e99731d3-b821-4af4-9ad2-1a7dfe118c4f,e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0,Romaine Lettuce,30,crate
+2534f75e-946d-4f35-a6b3-f0bcb9c16d18,f630ddf3-7566-4b7d-96df-97071f4dc790,Bottled Water,200,case
+4e12945f-27b5-43fd-9835-33004991300c,f630ddf3-7566-4b7d-96df-97071f4dc790,Paper Towels,80,case
+cfaa8f52-4ff4-4d89-bd71-1b2c70e953bf,796be89a-3bc5-4388-bfa6-9e5b0b2cbe28,Steel Brackets,500,unit
+83a70bb6-d299-4e98-8ed8-f80b290c66dd,856bd233-b884-4431-bee8-10eb0ce60241,Circuit Boards,150,unit
+0d120d18-1c4c-4b23-bc9e-d41452b70eac,856bd233-b884-4431-bee8-10eb0ce60241,Aluminum Housings,300,unit
+92e0524a-6c2d-4657-bd80-e43809649c54,a92f3872-cc95-49d1-8ea0-b33ee233e437,Packaging Foam,100,unit

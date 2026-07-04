@@ -1,0 +1,8 @@
+POST http://localhost:4004/odata/v4/admin/Deliveries(e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0)/AdminService.markDelivered
+Content-Type: application/json
+
+{}
+
+// Query the tables
+###
+http://localhost:4004/odata/v4/admin/Deliveries?$filter=ID eq e93df5d1-1a5b-4d98-bbcc-3b35fd5916e0
