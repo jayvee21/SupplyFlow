@@ -13,15 +13,21 @@
     "@types/node": "^24.0.0",
     "tsx": "^4",
     "typescript": "^6.0.0",
-    "@cap-js/cds-typer": ">=0.1"
+    "@cap-js/cds-typer": ">=0.1",
+    "cds-plugin-ui5": "^0.17.0",
+    "rimraf": "^5.0.5",
+    "mbt": "^1.2.49"
   },
   "scripts": {
     "start": "cds-serve",
     "watch": "cds watch",
     "watch:hybrid": "cds watch --profile hybrid",
-    "build": "cds build --production",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "deploy:local": "cds deploy --to sqlite:db.sqlite",
-    "reset:local-db": "rm -f db.sqlite"
+    "reset:local-db": "rm -f db.sqlite",
+    "watch-deliveries": "cds watch --open supplyflow.deliveries.deliveries/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "undeploy": "cf undeploy SupplyFlow --delete-services --delete-service-keys --delete-service-brokers",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "private": true,
   "cds": {
@@ -34,5 +40,11 @@
   },
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/deliveries"
+  ]
 }
