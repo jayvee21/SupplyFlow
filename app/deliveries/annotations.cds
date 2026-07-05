@@ -5,6 +5,9 @@ annotate service.Deliveries with @(
         scheduledDate,
         status_code
     ],
+    UI.Identification:[
+        { $Type: 'UI.DataFieldForAction', Action: 'AdminService.markDelivered', Label: 'Mark Delivered' }
+    ],
     UI.LineItem: [
         { Value: supplier_ID},
         { Value : scheduledDate },
@@ -60,4 +63,13 @@ annotate service.DeliveryStatusLog with @(
         { Value: changedAt },
         { Value: remarks }
     ]
-)
+);
+
+annotate service.Deliveries with actions {
+    markDelivered @(
+        Common.SideEffects: {
+            TargetProperties: ['status_code'],
+            TargetEntities: [statusLog]
+        }
+    );
+};
