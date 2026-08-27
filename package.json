@@ -35,6 +35,13 @@
       "[production]": {
         "auth": "xsuaa",
         "db": "hana"
+      },
+      "[development]": {
+        "auth" : "mocked",
+        "db": {
+          "kind" : "sqlite",
+          "path" : "db.sqlite"
+        }
       }
     }
   },

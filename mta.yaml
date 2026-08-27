@@ -7,8 +7,8 @@ modules:
   type: nodejs
   path: gen/srv
   requires:
-  - name: SupplyFlow-auth
-  - name: SupplyFlow-db
+  - name: SupplyFlow-auth # XSUAA
+  - name: SupplyFlow-db # database
   provides:
   - name: srv-api
     properties:
@@ -92,6 +92,7 @@ resources:
     service: destination
     service-name: SupplyFlow-destination-service
     service-plan: lite
+- name: cloud-logging
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

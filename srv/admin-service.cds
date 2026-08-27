@@ -1,6 +1,9 @@
 using { supplyFlow  } from '../db/schema';
 
+
+// @requires: 'authenticated-user'
 service AdminService {
+
     entity Suppliers as projection on supplyFlow.Suppliers;
     @Capabilities.DeleteRestrictions.Deletable: false
     entity Deliveries as projection on supplyFlow.Deliveries actions {
